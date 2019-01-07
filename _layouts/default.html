@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">درباره ما</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <span>
+          ساخته‌شده با <a href="https://jekyllrb.com/">Jekyll</a> و قالب <a href="https://github.com/chesterhow/tale/">Tale</a>
+          <br/>
+            &copy; {{ site.author.name }} <time id="copyright" datetime="{{ site.time }}"></time> 
+      </span>
+
+    </footer>
+  </body>
+</html>

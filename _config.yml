@@ -1,0 +1,40 @@
+# Site settings
+title:          PBR Group
+description:    ""
+baseurl:        "/clean-arch"
+url:            "https://pbr-group.github.io"
+
+# Author
+author:
+  name:         PBR Group
+  url:          https://pbr-group.github.io
+
+book:
+  name:         "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+paginate:       10
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:title
+
+
+# Exclude files
+exclude:
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - Gemfile
+  - Gemfile.lock
