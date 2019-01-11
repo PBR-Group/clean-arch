@@ -1,8 +1,11 @@
-layout | title | chapter | author
---- | --- | --- | ---
-post | برنامه نویسی شی گرا  | بخش دوم - فصل پنجم | [علی رضائیان](https://github.com/rezaiyan)
+---
+layout: post
+title: برنامه نویسی شی گرا
+chapter: بخش دوم - فصل پنجم
+author: علی رضائیان
+---
 
-<div dir="rtl">
+
 همانطور که خواهیم دید اساس یک معماری نرم افزار خوب فهم و بکاربردن طراحی شی گرایی است.
 
 شی گرایی چی هست؟
@@ -28,13 +31,11 @@ post | برنامه نویسی شی گرا  | بخش دوم - فصل پنجم | 
 
 با این حال روش پیاده سازی encapsulation با معرفی کلیدواژه های سطح دسترسی (public private protected) مقداری اطلاح شد.
 
-<div dir='ltr'>
-
-> Java and C# simply abolished the header/implementation split altogether, >thereby
->weakening encapsulation even more. In these languages, it is impossible to >separate
+> Java and C# simply abolished the header/implementation split altogether, 
+>thereby
+>weakening encapsulation even more. In these languages, it is impossible to 
+>separate
 >the declaration and definition of a class.
-
-</div>
 
 بر اساس دلایلی که ذکر شد oo وابستگی خاصی به encapsulation نداشت و اغلب زبان های oo هیچ اصراری هم بر پیاده سازی آن نداشتند.
 
@@ -82,11 +83,10 @@ post | برنامه نویسی شی گرا  | بخش دوم - فصل پنجم | 
 اگر یک دستگاه جدید io ساخته شود در آن برنامه چه اتفاقی می‌افتد؟
 در واقع هیچ اتفاقی نمی‌افتد. پیاده سازی متدها درخود دستگاه ها انجام شده است. و سیستم فقط function را فراخوانی میکند. به عبارت دیگر سیستم هیچ وابستگی به دستگاه ندارد(سورس کد درایور)
 ~~~~
-<div dir='ltr'>
+
 
 >OO allows the plugin architecture to be used anywhere, for anything.
 
-</div>
 
 ## Dependency Inversion
 
@@ -108,12 +108,12 @@ post | برنامه نویسی شی گرا  | بخش دوم - فصل پنجم | 
 واحد BusinessRule به بدون هیچ وابستگی قابل deploy شدن است و به همین ترتیب تغییرات واحدهای UI یا  DB هیچ اثری بر سیستم ندارد 
 
 
-<div dir='ltr'>
 
-> In short, when the source code in a component changes, only that >component needs
+> In short, when the source code in a component changes, only that 
+>component needs
 >to be redeployed. This is independent deployability.
->If the modules in your system can be deployed independently, then they can >be developed independently by different teams. That’s independent >developability.
-</div>
+>If the modules in your system can be deployed independently, then they can >be developed independently by different teams. That’s independent 
+>developability.
 
 ## Conclution
 
@@ -122,4 +122,3 @@ oo چیست؟
 oo یک توانایی است. که سه پارادایم درون خودش دارد.
 به طور مثال به واسته polymophism امکانی که به معمار نرم افزار میدهد این است که میتواند بر مسیرجریان سیستم کنترل داشته باشد, این به معمار نرم افزار مکان ساخت ماژول هایی با قابلیت plugin شدن را میدهد, که در آن ماژولها قواعد سطح بالایی وجود دارد که به طور کامل مستقل از ماژول هایی است که دارای جزییات سطح پایین است. 
 
-</div>
